@@ -5,30 +5,50 @@ body {
     margin: 0;
     text-align: center;
 }
+
 #nav {
     background: #616161;
-    flex: 1;
+    min-height: 10vh;
+    flex-grow: 1;
 }
+
 #main {
     display: flex;
     flex-direction: column;
-    flex: 5;
+    flex-grow: 5;
 }
-#container {
+
+#content {
     display: flex;
     flex-direction: row;
 }
+
 #article {
     background-color: lightblue;
-    flex: 3;
     min-height: 60vh;
+    flex-grow: 3;
 }
+
 #aside {
     background-color: rgb(46, 80, 124);
-    flex: 1;
+    min-height: 60vh;
+    flex-grow: 1;
 }
+
 header,
 footer {
+    display: flex;
     background: lightgray;
-    height: 20%;
+    height: 20vh;
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        flex-direction: column;
+    }
+
+    #content {
+        flex-direction: column;
+        min-height: 40vh;
+    }
 }
