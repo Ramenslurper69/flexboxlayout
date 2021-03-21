@@ -1,14 +1,34 @@
-#header {
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+    text-align: center;
 }
-
-#footer {
-}
-
 #nav {
+    background: #616161;
+    flex: 1;
 }
-
+#main {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+}
+#container {
+    display: flex;
+    flex-direction: row;
+}
 #article {
+    background-color: lightblue;
+    flex: 3;
+    min-height: 60vh;
 }
-
 #aside {
+    background-color: rgb(46, 80, 124);
+    flex: 1;
+}
+header,
+footer {
+    background: lightgray;
+    height: 20%;
 }
